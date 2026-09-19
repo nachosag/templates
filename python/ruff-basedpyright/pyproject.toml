@@ -1,0 +1,24 @@
+[project]
+name = "my-project"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+  "basedpyright>=1.40.1",
+  "pytest>=9.1.1",
+  "ruff>=0.16.7",
+]
+
+[tool.ruff]
+line-length = 80
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

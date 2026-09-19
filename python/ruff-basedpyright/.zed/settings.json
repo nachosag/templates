@@ -1,0 +1,39 @@
+{
+  "lsp": {
+    "basedpyright": {
+      "settings": {
+        "basedpyright": {
+          "analysis": {
+            "inlayHints": {
+              "variableTypes": true,
+              "callArgumentNames": true,
+              "callArgumentNamesMatching": true,
+              "functionReturnTypes": true,
+              "genericTypes": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "languages": {
+    "Python": {
+      "format_on_save": "on",
+      "code_actions_on_format": {
+        "source.organizeImports.ruff": true
+      },
+      "formatter": {
+        "language_server": {
+          "name": "ruff"
+        }
+      },
+      "language_servers": ["basedpyright", "ruff", "..."],
+      "inlay_hints": {
+        "enabled": true,
+        "show_type_hints": true,
+        "show_parameter_hints": true,
+        "show_other_hints": true
+      }
+    }
+  }
+}
