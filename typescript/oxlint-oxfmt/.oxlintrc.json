@@ -1,0 +1,30 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "perf": "warn",
+    "pedantic": "warn",
+    "style": "off",
+    "restriction": "off",
+    "nursery": "off"
+  },
+  "plugins": ["typescript", "import", "node", "unicorn"],
+  "env": {
+    "node": true,
+    "es2022": true
+  },
+  "rules": {
+    "sort-imports": ["error", { "ignoreDeclarationSort": true }],
+    "eqeqeq": "error",
+    "prefer-const": "error",
+    "import/no-cycle": "error",
+    "typescript/no-explicit-any": "warn",
+    "no-console": "warn"
+  },
+  "options": {
+    "denyWarnings": true,
+    "reportUnusedDisableDirectives": "warn",
+    "respectEslintDisableDirectives": true
+  }
+}
