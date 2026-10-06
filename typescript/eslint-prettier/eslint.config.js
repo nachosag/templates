@@ -19,6 +19,8 @@ export default tseslint.config(
       'prefer-const': 'error',
       // recommended brings it as error, we agreed warn like the oxlint template
       '@typescript-eslint/no-explicit-any': 'warn',
+      // Named functions and methods must declare their return type; inline callbacks may infer
+      '@typescript-eslint/explicit-function-return-type': ['error', { allowExpressions: true }],
     },
   },
 )
