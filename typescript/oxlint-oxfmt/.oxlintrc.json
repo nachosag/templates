@@ -15,12 +15,12 @@
     "es2022": true
   },
   "rules": {
+    "no-unused-vars": "off",
     "sort-imports": ["error", { "ignoreDeclarationSort": true }],
     "eqeqeq": "error",
     "prefer-const": "error",
     "import/no-cycle": "error",
-    "typescript/no-explicit-any": "warn",
-    "no-console": "warn"
+    "typescript/no-explicit-any": "warn"
   },
   "options": {
     "denyWarnings": true,

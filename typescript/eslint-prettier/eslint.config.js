@@ -10,11 +10,13 @@ export default tseslint.config(
       reportUnusedDisableDirectives: 'warn',
     },
     rules: {
+      // vtsls/tsc owns unused (noUnusedLocals/Parameters), silence eslint to avoid duplicates
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
       // Reuse from oxlint template: members only, line order owns the formatter
       'sort-imports': ['error', { ignoreDeclarationSort: true }],
       eqeqeq: 'error',
       'prefer-const': 'error',
-      'no-console': 'warn',
       // recommended brings it as error, we agreed warn like the oxlint template
       '@typescript-eslint/no-explicit-any': 'warn',
     },
