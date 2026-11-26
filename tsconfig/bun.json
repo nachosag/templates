@@ -1,0 +1,12 @@
+{
+  "extends": "./base.json",
+  "compilerOptions": {
+    "module": "Preserve",
+    "moduleResolution": "bundler",
+    "lib": ["ESNext"],
+    "target": "ESNext",
+    "types": ["bun"],
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  }
+}
